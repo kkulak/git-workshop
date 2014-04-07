@@ -9,11 +9,8 @@ def main():
     drawer = TextDrawer()
     drawer.setFont(font)
     drawer.draw(text)
-def getText():
-    if len(sys.argv) != 1:
-        print "Bad arguments"
-        sys.exit(1)
 
+def getText():
     return sys.argv[0]
 
 
