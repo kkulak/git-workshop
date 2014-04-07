@@ -1,5 +1,13 @@
 from font import Font, FontLoader
 
+def main():
+    text = getText()
+    font = FontLoader().loadFont('fancyFont/')
+
+    drawer = TextDrawer()
+    drawer.setFont(font)
+    drawer.draw(text)
+
 def getText():
     return 'Git'
 
@@ -19,10 +27,5 @@ class TextDrawer:
         pass
 
 
-
-text = getText()
-font = FontLoader().loadFont('fancyFont/')
-
-drawer = TextDrawer()
-drawer.setFont(font)
-drawer.draw(text)
+if __name__ == '__main__':
+    main()
